@@ -26,10 +26,11 @@ const initialState = {
 export default function(state = initialState, action) {
     switch (action.type) {
         case GET_SLOTS_REQUEST:
-        return Object.assign(state, {
+        return {
+            ...state,
             getSlotsLoading: true,
             getSlotsError: null,
-        });
+        };
 
         case GET_SLOTS_SUCCESS:
         return {

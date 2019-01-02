@@ -2,6 +2,12 @@
 
 A technical exercise written in Node & React that fulfils the user stories further down the page.
 
+## Running
+Provided Docker and Docker Compose are installed, clone the repo, navigate to the root directory and run ```$ docker-compose up```.
+Once all of the containers have been built and are running, open your browser and head to ```localhost:8080``` to access the frontend app.
+
+To run the tests, head to the root directory and run ```$ docker-compose -f docker-compose.test.yml -p tech_exercise_testup``` to view the test output in your terminal window.
+
 ## User Stories
 
 Create a delivery slot picker which generates a group of dates and delivery slots for selection by a user.
@@ -24,5 +30,3 @@ Create a delivery slot picker which generates a group of dates and delivery slot
 - If the first date in the picker has no available slots for any reason, it is removed from the data/UI
 - When the date generator is given a flag of your choosing (e.g., indicating a particular type of item in the order being delivered), dates which fall on a Wednesday are unavailable and indicated as such in the UI rather than missing or marked as ‘full’
 - The first time slot for the day is never available on every second Friday
-
-

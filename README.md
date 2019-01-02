@@ -2,7 +2,7 @@
 
 A technical exercise written in Node & React that fulfils the user stories further down the page.
 
-## Running
+## Run
 Provided Docker and Docker Compose are installed, clone the repo, navigate to the root directory and run ```$ docker-compose up```.
 Once all of the containers have been built and are running, open your browser and head to ```localhost:8080``` to access the frontend app.
 

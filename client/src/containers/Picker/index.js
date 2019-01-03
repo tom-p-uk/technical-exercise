@@ -121,7 +121,7 @@ class Picker extends Component {
 
         return (
             <Limit>
-                <span>Select num of days: </span>
+                <span>Number of days to display: </span>
                 <select value={limit} onChange={this.handleChangeSelect}>
                     <option value={3}>3</option>
                     <option value={4}>4</option>

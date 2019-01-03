@@ -1,12 +1,17 @@
 # Technical Exercise
 
-A technical exercise written in Node & React that fulfils the user stories further down the page.
+A small app with NodeJS backend and React frontend that fulfils the user stories further down the page.
 
-## Run
-Provided Docker and Docker Compose are installed, clone the repo, navigate to the root directory and run ```$ docker-compose up```.
-Once all of the containers have been built and are running, open your browser and head to ```localhost:8080``` to access the frontend app.
+## Usage
+Provided Docker and Docker Compose are installed, clone the repo, navigate to the root directory and run:
 
-To run the tests, head to the root directory and run ```$ docker-compose -f docker-compose.test.yml -p tech_exercise_testup``` to view the test output in your terminal window.
+```$ docker-compose up```
+
+Once all of the containers have been built and are running, open your browser and access the frontend at ```localhost:8080```.
+
+To run the tests, head to the root directory and run the following command to view the test output in your terminal window:
+
+```$ docker-compose -f docker-compose.test.yml -p tech_exercise_test up```
 
 ## User Stories
 
@@ -18,8 +23,7 @@ Create a delivery slot picker which generates a group of dates and delivery slot
 4 days)
 - Sunday is never available and not to be included in the output
 - Ensure that a grouping of days is always filled to capacity (e.g., don’t have 1 day alone at the start of a group of 3 with the last 2 missing from the set)
-- Simulate (or implement, if you prefer) database entries that indicate a particular date and slot are ‘full’ and mark them as such in the UI
- -- Example:2017-12-01,AM
+- Simulate (or implement, if you prefer) database entries that indicate a particular date and slot are ‘full’ and mark them as such in the UI (Example:2017-12-01,AM)
 
 #### Frontend
 - Using your choice of tooling, render the date/slot picker interface based on the generated data into a grid or layout of your choosing
